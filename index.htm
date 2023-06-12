@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="user-modal-overlay">
+        <div class="user-modal-container">
+          <div class="modal-left">
+            <div class="modal-img-container">
+              <img src="img/login.jpg" class="img-modal" alt="" />
+            </div>
+          </div>
+          <div class="modal-right">
+            <div class="right-container">
+              <div class="close">
+                <i class="bx bx-x"></i>
+              </div>
+              <h4 class="logo-con">Food World</h4>
+
+              <div class="right-modal-btn">
+                <button
+                  class="tab-btn login active"
+                  type="button"
+                  data-id="login"
+                >
+                  Log In
+                </button>
+                <button class="tab-btn signup" type="button" data-id="signup">
+                  Sign Up
+                </button>
+              </div>
+
+              <form action="" class="form-container">
+                <div class="login-form content active" id="login">
+                  <label for="a">Email</label>
+                  <input type="email" class="email" />
+
+                  <label for="b">Password</label>
+                  <input type="password" class="password" />
+
+                  <button class="btn-login">Log In</button>
+                  <p>or</p>
+                  <div class="login-links">
+                    <i class="bx bxl-google"></i>
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-linkedin"></i>
+                  </div>
+                </div>
+
+                <div class="signup-form content" id="signup">
+                  <label for="c">Username</label>
+                  <input type="text" class="username" />
+
+                  <label for="a">Email</label>
+                  <input type="email" class="email" />
+
+                  <label for="b">Password</label>
+                  <input type="password" class="password" />
+
+                  <button class="btn-signup">Sign Up</button>
+                  <p>or</p>
+                  <div class="login-links">
+                    <i class="bx bxl-google"></i>
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-linkedin"></i>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <nav class="nav-section section">
+        <div class="nav-header">
+          <h2 class="logo">Food World</h2>
+
+          <div class="menu">
+            <i class="bx bx-menu menu-icon"></i>
+          </div>
+        </div>
+
+        <div class="nav-links-container">
+          <ul class="list">
+            <li class="list-item">Home</li>
+            <li class="list-item">Menu</li>
+            <li class="list-item">About Us</li>
+            <li class="list-item">Contact Us</li>
+          </ul>
+
+          <div class="top-icons">
+            <div class="search">
+              <i class="bx bx-search icon"></i>
+            </div>
+            <div class="icon-shop">
+              <i class="bx bx-shopping-bag icon cart-icon"></i>
+              <span class="number">0</span>
+            </div>
+            <div class="user">
+              <i class="bx bx-user icon"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- End Of Navigation -->
+
+      <header class="header-section section">
+        <div class="shop-cart-section">
+          <div class="cart-section">
+            <div class="top-section">
+              <div class="close-cart close-btn">
+                <i class="bx bx-x close-btn"></i>
+              </div>
+              <h3 class="cart-title">Your Cart</h3>
+            </div>
+
+            <div class="mid-section"></div>
+
+            <!-- bottom-section -->
+            <div class="bottom-cart-section">
+              <hr />
+              <p class="total">Total: $<span class="total-item"></span></p>
+              <div class="btn-con">
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-modal">
+          <input type="text" placeholder="Search.." class="search-input" />
+        </div>
+
+        <!-- left header -->
+        <div class="left-header">
+          <h3>
+            The Number <span>#One</span> <br />Choice Your <br />
+            <span>Hunger Solution</span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            doloremque.
+          </p>
+
+          <div class="btns">
+            <button class="btn">Get Started</button>
+            <button class="btn-transparent">
+              <i class="bx bx-play play"></i> Watch Video
+            </button>
+          </div>
+
+          <div class="avatar-section">
+            <div class="img-container">
+              <div>
+                <img
+                  src="img/pexels-andrea-piacquadio-733872.jpg"
+                  alt=""
+                  class="img-avatar"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/pexels-andrea-piacquadio-733872.jpg"
+                  alt=""
+                  class="img-avatar"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/pexels-andrea-piacquadio-733872.jpg"
+                  alt=""
+                  class="img-avatar"
+                />
+              </div>
+            </div>
+            <div class="avatar-head">
+              <h4>Our Happy Customer</h4>
+
+              <div class="avatar-right">
+                <i class="bx bxs-star star-icon"></i>
+                <p>4.8</p>
+                <p>(12.1K Review)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right header img -->
+        <div class="right-header">
+          <div>
+            <img
+              src="img/favpng_pizza-chef-italian-cuisine-cooking.png"
+              alt="header img"
+              class="header-img"
+            />
+          </div>
+
+          <div class="top-box">
+            <img src="img/seafood-pizza.jpg" class="top-img" alt="" />
+
+            <div class="top-desc">
+              <p>Hawaian Pizza</p>
+              <div class="star-container">
+                <i class="bx bxs-star star-icon"></i>
+                <i class="bx bxs-star star-icon"></i>
+                <i class="bx bxs-star star-icon"></i>
+                <i class="bx bxs-star star-icon"></i>
+              </div>
+
+              <p>$17.00</p>
+            </div>
+          </div>
+
+          <div class="right-box">
+            <img
+              src="img/pexels-andrea-piacquadio-733872.jpg"
+              alt=""
+              class="img-avatar"
+            />
+
+            <div class="right-box-desc">
+              <h4>Alaiza Gondraneos</h4>
+              <p>Food Courier</p>
+            </div>
+
+            <div class="right-box-call">
+              <i class="bx bxs-phone"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- End Of Header -->
+      <!-- Start of Popular Products -->
+      <section class="popular-products section">
+        <h4>Online Store</h4>
+        <h1>Popular Products</h1>
+        <div class="popular">
+          <hr />
+        </div>
+
+        <div class="popular-list">
+          <!-- popular-list-item -->
+          <div class="products"></div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section class="menu-container section">
+        <div class="menu-h5">
+          <h5><i class="bx bx-food-menu"></i> Our Menu</h5>
+        </div>
+        <h4>Online Store</h4>
+        <h1>Eat Fresh & Healthy</h1>
+        <div class="menu-list">
+          <hr />
+        </div>
+
+        <div class="btn-container">
+          <button type="button" class="btn-filter" data-id="all">All</button>
+          <button type="button" class="btn-filter" data-id="pizza">
+            <img src="img/menu/pizza.jpg" class="menu-img-big" alt="" /><span
+              >Pizza</span
+            >
+          </button>
+          <button type="button" class="btn-filter" data-id="burger">
+            <img src="img/menu/burger.jpg" class="menu-img" alt="" />Burger
+          </button>
+          <button type="button" class="btn-filter" data-id="cake">
+            <img src="img/menu/cake.jpg" class="menu-img" alt="" />Cake
+          </button>
+          <button type="button" class="btn-filter" data-id="sandwich">
+            <img
+              src="img/menu/sandwich.jpg"
+              class="menu-img-big"
+              alt=""
+            />Sandwich
+          </button>
+        </div>
+
+        <div class="menu-lists">
+          <div class="menus">
+            <!-- Display Menu Here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- modal -->
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <h4 class="question-title">Are you sure you want to buy it now?</h4>
+
+          <div class="modal-btn">
+            <button class="buy-nows" type="button">Buy Now</button>
+            <button class="cancel" type="button">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us -->
+      <section class="about-us section">
+        <div class="about-img">
+          <img
+            src="img/chef-pointing-front-white-background.jpg"
+            class="about-image"
+            alt=""
+          />
+          <div class="about-comment">
+            <h3>Our Reviews</h3>
+          </div>
+        </div>
+
+        <div class="about-info">
+          <h5>What they say</h5>
+          <h3 class="about-title">What Our Customer say about us?</h3>
+          <p class="about-desc">
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            laborum quos libero fugit voluptates explicabo, aperiam in? Totam,
+            adipisci pariatur?"
+          </p>
+
+          <div class="about-profile">
+            <img src="img/pexels-andrea-piacquadio-733872.jpg" alt="" />
+
+            <div class="profile-info">
+              <h4>Alaiza Gondraneos</h4>
+              <p>Food Enthusiast</p>
+            </div>
+          </div>
+
+          <div class="rating">
+            <div class="star-rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+            <p>4.8</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Choose Us -->
+      <section class="choose-us section">
+        <h3 class="choose-title">Why Choose Us?</h3>
+
+        <div class="choose-img-container">
+          <img src="img/scattered.jpg" class="choose-img" alt="" />
+
+          <div class="con-container">
+            <div class="con-1">
+              <i class="bx bxs-heart"></i>
+              <h4>Super Healthy</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam harum voluptas accusamus! Ex, repudiandae expedita!
+              </p>
+            </div>
+
+            <div class="con-2">
+              <i class="bx bxs-leaf"></i>
+              <h4>Always Fresh</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam harum voluptas accusamus! Ex, repudiandae expedita!
+              </p>
+            </div>
+
+            <div class="con-3">
+              <i class="bx bxs-bowl-hot"></i>
+              <h4>Fresh Food</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam harum voluptas accusamus! Ex, repudiandae expedita!
+              </p>
+            </div>
+
+            <div class="con-4">
+              <i class="bx bxl-mongodb"></i>
+              <h4>100% Natural</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam harum voluptas accusamus! Ex, repudiandae expedita!
+              </p>
+            </div>
+
+            <div class="con-5">
+              <i class="bx bx-badge-check"></i>
+              <h4>Premium Quality</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam harum voluptas accusamus! Ex, repudiandae expedita!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-con">
+          <div class="input-container">
+            <h3>Get a Quote for Food World</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            </p>
+
+            <div class="input-con">
+              <div class="input-hold">
+                <input
+                  type="text"
+                  placeholder="Enter your Email Here"
+                  class="input-text"
+                />
+                <button class="btn-submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© UI Phoenix for template | All rights reserved <span>2023</span></p>
+      </footer>
+    </div>
+
+    <!-- Javascript -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
